@@ -44,10 +44,20 @@ header {
   background-color: var(--card-color);
   border-bottom: 1px solid var(--secondary);
   box-shadow: 3px 3px 5px var(--shadow);
+  display: flex;
+  justify-content: space-between;
 }
 
 header h1 {
   margin-left: 32px;
+}
+
+.theme-button {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--special);
+}
+.theme-button:hover {
 }
 
 h1,
@@ -123,7 +133,7 @@ main {
   width: 90%;
 }
 
-button {
+.about-button {
   border: 1px solid var(--border-color);
   border-radius: 3px;
   padding: 4px;
@@ -135,9 +145,10 @@ button {
   transition: all 0.2s ease-in-out;
   margin-top: auto;
 }
-button:hover {
+.about-button:hover {
   transform: scale(1.05);
   background-color: var(--secondary);
+  filter: drop-shadow(0 0 5px #00eaff1c);
 }
 footer {
   width: 100%;
