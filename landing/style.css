@@ -200,8 +200,7 @@ footer {
 @media screen and (max-width: 700px) {
   .nav-bar {
     position: absolute;
-    visibility: hidden;
-    opacity: 0;
+    display: none;
     top: 40px;
     right: 10px;
     flex-direction: column;
@@ -212,13 +211,16 @@ footer {
     border: 1px solid var(--secondary);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-
-    transition: visibility 0.3s, opacity 0.3s linear;
   }
   .theme-button {
     height: 20px;
   }
   .menu-icon {
     display: block;
+  }
+}
+@media screen and (min-width: 701px) {
+  .nav-bar {
+    display: flex !important;
   }
 }

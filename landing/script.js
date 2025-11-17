@@ -20,13 +20,11 @@ function openMenu() {
   menuIcon.classList.toggle("open");
 
   if (menuIcon.classList.contains("open")) {
-    navBar.style.visibility = "visible";
-    navBar.style.opacity = 1;
+    navBar.style.display = "flex";
     menuIcon.classList.remove("bi-list");
     menuIcon.classList.add("bi-x");
   } else {
-    navBar.style.visibility = "hidden";
-    navBar.style.opacity = 0;
+    navBar.style.display = "none";
     menuIcon.classList.remove("bi-x");
     menuIcon.classList.add("bi-list");
   }
