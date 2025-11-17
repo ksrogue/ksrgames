@@ -20,12 +20,13 @@
   font-family: var(--font);
 }
 
-.dark {
-  --background-color: #0e0e10;
-  --text-color: #f0f0f0;
-  --special: #4b6bfb;
-  --card-color: #1a1a1d;
-  --border-color: rgba(255, 255, 255, 0.5);
+.dark-theme {
+  --background-color: #05050a;
+  --text-color: #e8e8e8;
+  --special: #00eaff;
+  --secondary: #ff00e6;
+  --card-color: #12121a;
+  --border-color: rgba(255, 0, 230, 0.2);
 }
 
 body {
@@ -55,9 +56,16 @@ header h1 {
 .theme-button {
   border: 1px solid var(--border-color);
   border-radius: 5px;
+  width: 60px;
+  height: 30px;
   background-color: var(--special);
+  cursor: pointer;
+
+  transition: all .3s ease-in-out;
 }
 .theme-button:hover {
+  transform: scale(1.05);
+  background-color: var(--secondary);
 }
 
 h1,
