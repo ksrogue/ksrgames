@@ -1,0 +1,106 @@
+header {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--card-color);
+  border-bottom: 1px solid var(--secondary);
+  box-shadow: 3px 3px 5px var(--shadow);
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin-left: 32px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all .3s ease-in-out;
+}
+.nav-bar a:hover {
+  color: var(--secondary);
+  transform: scale(1.05) translateY(-3px);
+  text-shadow: 0 0 8px var(--secondary);
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 24px;
+}
+.menu-icon:hover {
+  color: var(--secondary);
+  transform: scale(1.05) translateY(-3px);
+}
+
+
+.theme-button {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  width: 30px;
+  height: 30px;
+  background-color: var(--special);
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+.theme-button:hover {
+  transform: scale(1.05);
+  background-color: var(--secondary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--main-font);
+  text-shadow: 3px 3px 5px var(--shadow);
+  -webkit-text-stroke: 1px var(--shadow);
+  letter-spacing: 1px;
+  color: var(--special);
+}
+
+
+
+footer {
+  width: 100%;
+  padding: 6px;
+  text-align: center;
+  background-color: var(--card-color);
+  border-top: 1px solid var(--secondary);
+}
+
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    position: absolute;
+    display: none;
+    top: 40px;
+    right: 10px;
+    flex-direction: column;
+
+    background-color: var(--card-color);
+    padding: 0 32px;
+    gap: 0px;
+    border: 1px solid var(--secondary);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .theme-button {
+    height: 20px;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+@media screen and (min-width: 701px) {
+  .nav-bar {
+    display: flex !important;
+  }
+}
