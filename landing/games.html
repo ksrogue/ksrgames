@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/games.css" />
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -27,13 +27,55 @@
     </header>
 
     <main>
-
+      <ul class="game-list">
+        <li class="list-item" onclick="selectItem(0)">Chrono Blades</li>
+        <li class="list-item" onclick="selectItem(1)">Starfall Racers</li>
+        <li class="list-item" onclick="selectItem(2)">Forest Spirits</li>
+      </ul>
+      <div class="game-card">
+        <img src="assets/chrono-blades-img.png" alt="imagem do chrono blades" class="game-img"/>
+        <h2 class="game-name">Chrono Blades</h2>
+        <p class="game-desc">
+          um RPG de ação ambientado em um mundo onde o tempo é uma força viva,
+          capaz de moldar destinos, criar monstros e alterar a realidade. Você
+          controla Kael, um jovem guerreiro escolhido pelas Lâminas Eternas —
+          duas espadas ancestrais capazes de canalizar energia temporal pura...
+        </p>
+        <p class="game-desc hidden">
+          Após o colapso da Ordem dos Guardiões do Tempo, criaturas corrompidas
+          emergem de fendas temporais, distorcendo reinos inteiros. Montanhas
+          flutuam, cidades ficam presas em loops infinitos e civilizações
+          inteiras desmoronam em segundos. Kael é um dos poucos capazes de
+          manipular esse poder para restaurar o equilíbrio.
+        </p>
+        <p class="game-desc hidden">
+          Durante sua jornada, o jogador explora regiões devastadas, repletas de
+          ruínas, desertos cristalizados, selvas alteradas pelo tempo e
+          fortalezas flutuantes. Cada área é habitada por inimigos únicos,
+          criados a partir de falhas temporais — mutações alienígenas, máquinas
+          antigas reativadas e monstros primordiais evoluídos em eras
+          impossíveis.
+        </p>
+        <p class="game-desc hidden">
+          Conforme evolui, Kael libera novos estilos de combate, runas temporais
+          e variações das lâminas, cada uma com propriedades únicas, como
+          energia solar, distorção gravitacional ou dano de fenda temporal.
+        </p>
+        <p class="game-desc hidden">
+          Ao longo da história, o jogador enfrenta escolhas morais que afetam o
+          destino de personagens, vilas e linhas temporais inteiras, definindo
+          diferentes finais. Eternal Blades é uma jornada épica sobre destino,
+          sacrifício e o peso de controlar o próprio tempo — literalmente.
+        </p>
+        <button class="game-details" onclick="seeMore()">Ver Mais</button>
+        <span class="game-gender">Ação / RPG</span>
+        <span class="game-release">Lançamento previsto: 2026</span>
+      </div>
     </main>
 
     <footer>
-        <p>© 2025 KsRGames. Todos os direitos reservados.</p>
+      <p>© 2025 KsRGames. Todos os direitos reservados.</p>
     </footer>
-
 
     <script src="script.js"></script>
   </body>
