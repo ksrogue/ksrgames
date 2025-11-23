@@ -1,0 +1,9 @@
+body {
+    min-height: 100vh;
+}
+
+hr  {
+    border-color: var(--special);
+    width: 80%;
+    margin: 32px auto;
+}
