@@ -4,6 +4,43 @@ body {
 
 hr  {
     border-color: var(--special);
-    width: 80%;
+    width: 90%;
     margin: 32px auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us, .mission, .values {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+h2 {
+    margin-left: 32px;
+}
+
+.mission-title {
+    margin-left: 32px;
+}
+
+.values-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.left {
+    margin-right: 30%;
+}
+
+.right {
+    justify-items: flex-end;
+    text-align: end;
+    margin-left: 30%;
 }
