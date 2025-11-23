@@ -32,7 +32,7 @@ h2 {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
 }
 
 .left {
@@ -41,6 +41,19 @@ h2 {
 
 .right {
     justify-items: flex-end;
-    text-align: end;
     margin-left: 30%;
+}
+
+@media screen and (min-width: 700px) {
+
+    .left {
+        width: 50%;
+        margin-right: 0px;
+        margin-left: 64px;
+    }
+    .right {
+        width: 50%;
+        margin-left: 64px;
+        justify-items: flex-start;
+    }
 }
