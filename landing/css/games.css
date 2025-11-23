@@ -163,6 +163,7 @@ footer {
     border: 1px solid var(--secondary);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    z-index: 100;
   }
   .theme-button {
     height: 20px;
