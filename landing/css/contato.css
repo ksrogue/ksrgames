@@ -1,0 +1,83 @@
+input,
+textarea {
+  border: 1px solid var(--special);
+  border-radius: 3px;
+  outline: none;
+  padding: 3px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 80%;
+}
+
+label {
+  color: var();
+}
+
+.nome,
+.email,
+.textarea,
+.subject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subject input {
+  width: 80%;
+  height: 35px;
+}
+
+.textarea {
+  width: 100%;
+  gap: 8px;
+}
+
+textarea {
+  width: 80%;
+  height: 450px;
+  padding: 8px;
+  background-color: var(--card-color);
+  color: #fff;
+}
+
+button {
+  border: 1px solid var(--special);
+  background-color: var(--special);
+  border-radius: 5px;
+  color: #fff;
+  width: 30%;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: var(--secondary);
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 3px 3px 5px var(--secondary);
+}
+
+@media screen and (max-width: 700px) {
+  .subject input {
+    width: 100%;
+  }
+  textarea {
+  }
+}
