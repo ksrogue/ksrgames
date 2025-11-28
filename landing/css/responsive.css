@@ -1,0 +1,23 @@
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    position: absolute;
+    display: none;
+    top: 40px;
+    right: 10px;
+    flex-direction: column;
+
+    background-color: var(--card-color);
+    padding: 0 32px;
+    gap: 0px;
+    border: 1px solid var(--secondary);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 100;
+  }
+  .theme-button {
+    height: 20px;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
