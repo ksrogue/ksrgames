@@ -5,6 +5,7 @@ const seeMoreBtn = document.querySelector(".game-details");
 const descTexts = document.querySelectorAll(".game-desc");
 const listItem = document.querySelectorAll(".list-item");
 
+
 function changeTheme() {
   body.classList.toggle("dark-theme");
   if (body.classList.contains("dark-theme")) {

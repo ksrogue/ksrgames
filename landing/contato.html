@@ -31,7 +31,7 @@
 
     <main>
         <h2>Entre em contato com a gente!</h2>
-        <form action="" class="form">
+        <form  class="form">
             <div class="nome">
                 <label for="nome">Nome *</label>
                 <input type="text" id="nome" name="nome" required>
@@ -45,9 +45,11 @@
                     <label for="subject">Assunto: *</label>
                     <input type="text" name="subject" id="subject" required>
                 </div>
-                <textarea name="" id="" required minlength="10"></textarea>
+                <textarea name="textarea" id="textarea" required minlength="10"></textarea>
             </div>
-            <button>ENVIAR</button>
+            <button class="sub-btn" >ENVIAR</button>
+            <span class="sub-msg"></span>
+
         </form>
     </main>
 
@@ -56,5 +58,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="validate.js"></script>
   </body>
 </html>

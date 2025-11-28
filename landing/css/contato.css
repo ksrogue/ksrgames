@@ -6,6 +6,16 @@ textarea {
   padding: 3px;
 }
 
+input:valid {
+  color: green;
+}
+input:invalid {
+  color: red;
+}
+input:focus {
+  box-shadow: 0px 3px 5px var(--special);
+}
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -15,19 +25,33 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+h2 {
+  text-align: center;
 }
 
-.form, .nome, .email, .textarea, .subject {
+.form,
+.nome,
+.email,
+.textarea,
+.subject {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
 }
-.form, .textarea {
+.form,
+.textarea {
   gap: 8px;
+  width: 100%;
 }
 
-.textarea, textarea {
-  width: 90%;
+textarea {
+  width: 50%;
+  min-height: 150px;
+  padding: 4px;
 }
 
 button {
@@ -38,7 +62,7 @@ button {
   width: 100px;
   padding: 8px;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 button:hover {
   transform: scale(1.03) translateX(-3px);
@@ -46,6 +70,18 @@ button:hover {
   box-shadow: 3px 3px 5px var(--secondary);
 }
 
-@media screen and (max-width: 700px) {
+input::selection {
+  border: 1px solid pink;
+}
+.hidden {
+  display: none;
+}
+.sub-msg {
+  color: green;
+}
 
+@media screen and (max-width: 700px) {
+  textarea {
+    width: 90%;
+  }
 }
