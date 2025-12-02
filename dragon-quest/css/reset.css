@@ -9,7 +9,7 @@
   --accent: #b63b3b;
   --highlight: #a8bfe3;
   --border-color: #d6c9b4;
-  --shadow-color: rgba(70, 50, 40, 0.12);
+  --shadow-color: rgba(0, 0, 0, 0.6);
 
   --main-font: "Cinzel", serif;
   --text-font: "Cormorant Garamond", serif;
@@ -38,6 +38,7 @@
   text-decoration: none;
 
   color: var(--text-color);
+  transition: all 0.3s ease-in;
 }
 
 body {
@@ -62,16 +63,15 @@ button {
   border: 1px solid var(--secondary);
   border-radius: 3px;
   color: var(--secondary);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 button:hover {
-    background-color: var(--secondary);
-    color: var(--primary);
-    transform: scale(1.03) translateY(-3px);
-    box-shadow: 3px 3px 5px var(--highlight);
-
-  }
+  background-color: var(--secondary);
+  color: var(--primary);
+  transform: scale(1.03) translateY(-3px);
+  box-shadow: 3px 3px 5px var(--highlight);
+}
 
 header {
   display: flex;
@@ -92,6 +92,38 @@ header {
 .nav-bar {
   display: flex;
   gap: 16px;
+  z-index: 99;
+}
+.nav-item {
+  transition: all 0.3s ease-in;
+}
+.nav-item:hover {
+  transform: scale(1.01) translateY(-1px);
+  & a {
+    color: var(--primary);
+    font-weight: bold;
+    border-bottom: 1px solid var(--primary);
+  }
+}
+
+.menu-icon {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  font-size: 30px;
+  display: none;
+}
+.menu-icon:hover {
+  transform: scale(1.05) translateY(-3px);
+  color: var(--primary);
+}
+
+.theme-button {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.theme-button:hover {
+  transform: scale(1.05) translateY(-1px);
+  color: var(--primary);
 }
 
 footer {
@@ -103,4 +135,32 @@ footer {
   text-align: center;
   background-color: var(--surface-color);
   border-top: 1px solid var(--border-color);
+}
+footer a:hover {
+  color: var(--accent);
+}
+
+@media screen and (max-width: 600px) {
+
+ 
+  .nav-bar {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .open-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 150px;
+    text-align: center;
+
+    border: 1px solid var(--border-color);
+    background-color: var(--surface-color);
+
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
 }
