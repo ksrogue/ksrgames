@@ -140,6 +140,10 @@ footer a:hover {
   color: var(--accent);
 }
 
+.open-menu {
+display: none;
+}
+
 @media screen and (max-width: 600px) {
 
  
