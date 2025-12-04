@@ -145,6 +145,7 @@ footer a:hover {
  
   .nav-bar {
     display: none;
+    overflow: hidden;
   }
   .menu-icon {
     display: block;
@@ -161,6 +162,6 @@ footer a:hover {
 
     position: absolute;
     top: 50px;
-    right: 20px;
+    right: 10px;
   }
 }
