@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "tittle": "Dragon Quest I",
+        "img": "dq1.png",
+        "year": 1986,
+        "description": "O jogo que iniciou a lendária série Dragon Quest, apresentando aos jogadores um mundo de fantasia repleto de monstros, heróis e aventuras épicas."
+    },
+    {
+        "id": 2,
+        "tittle": "Dragon Quest II: Luminaries of the Legendary Line",
+        "img": "dq2.png",
+        "year": 1987,
+        "description": "Expande o universo de Dragon Quest com uma história mais complexa, novos personagens jogáveis e um mundo maior para explorar."
+    },
+    {
+        "id": 3,
+        "tittle": "Dragon Quest III: The Seeds of Salvation",
+        "img": "dq3.png",
+        "year": 1988,
+        "description": "Frequentemente considerado um dos melhores da série, este jogo introduz um sistema de classes de personagens e uma narrativa envolvente que influenciou muitos RPGs subsequentes."
+    },
+    {
+        "id": 4,
+        "tittle": "Dragon Quest IV: Chapters of the Chosen",
+        "img": "dq4.png",
+        "year": 1990,
+        "description": "Primeiro jogo da série a ser dividido em capítulos, cada um focando em diferentes personagens antes de unir suas histórias em uma aventura épica."
+    },
+    {
+        "id": 5,
+        "tittle": "Dragon Quest V: Hand of the Heavenly Bride",
+        "img": "dq5.png",
+        "year": 1992,
+        "description": "Traz uma narrativa emocional que acompanha a vida do protagonista desde a infância até a idade adulta, incluindo elementos de casamento e criação de família."
+    },
+    {
+        "id": 6,
+        "tittle": "Dragon Quest VI: Realms of Revelation",
+        "img": "dq6.png",
+        "year": 1995,
+        "description": "Marca a transição para gráficos mais avançados e apresenta uma história complexa envolvendo mundos paralelos e temas de identidade."
+    },
+    {
+        "id": 7,
+        "tittle": "Dragon Quest VII: Fragments of the Forgotten Past",
+        "img": "dq7.png",
+        "year": 2000,
+        "description": "Conhecido por sua longa duração e exploração profunda, este jogo leva os jogadores a viajar no tempo para restaurar civilizações perdidas."
+    },
+    {
+        "id": 8,
+        "tittle": "Dragon Quest VIII: Journey of the Cursed King",
+        "img": "dq8.png",
+        "year": 2004,
+        "description": "O primeiro jogo da série a apresentar gráficos totalmente em 3D, oferecendo uma experiência visual impressionante e uma história cativante."
+    },
+    {
+        "id": 9,
+        "tittle": "Dragon Quest IX: Sentinels of the Starry Skies",
+        "img": "dq9.png",
+        "year": 2009,
+        "description": "Foca na personalização do personagem e na cooperação multiplayer, permitindo que os jogadores criem seus próprios heróis e explorem o mundo juntos."
+    },
+    {
+        "id": 10,
+        "tittle": "Dragon Quest X: Rise of the Five Tribes Online",
+        "img": "dq10.png",
+        "year": 2012,
+        "description": "O único MMORPG da série, oferecendo uma experiência online onde jogadores de todo o mundo podem se aventurar juntos em um vasto mundo de fantasia."
+    },
+    {
+        "id": 11,
+        "tittle": "Dragon Quest XI: Echoes of an Elusive Age",
+        "img": "dq11.png",
+        "year": 2017,
+        "description": "Um retorno triunfante às raízes da série, combinando gráficos modernos com jogabilidade clássica e uma história épica que cativa tanto novos jogadores quanto fãs de longa data."
+    }
+]

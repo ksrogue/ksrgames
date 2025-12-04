@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <title>Dragon Quest - Home</title>
   </head>
   <body>
@@ -15,12 +18,14 @@
       </div>
       <ul class="nav-bar">
         <li class="nav-item"><a href="#">Home</a></li>
-        <li class="nav-item"><a href="#">Jogos</a></li>
         <li class="nav-item"><a href="#">Sobre</a></li>
+        <li class="nav-item"><a href="#">Jogos</a></li>
         <li class="nav-item"><a href="#">Contato</a></li>
-        <li class="nav-item nav-button"><i class="bi bi-moon-fill theme-button"></i></li>
+        <li class="nav-item nav-button">
+          <i class="bi bi-moon-fill theme-button"></i>
+        </li>
       </ul>
-       <i class="bi bi-list menu-icon"></i>
+      <i class="bi bi-list menu-icon"></i>
     </header>
     <main>
       <section class="welcome-section">
@@ -31,58 +36,62 @@
       <section class="about-section">
         <h2>O que é Dragon Quest?</h2>
         <p>
-          Dragon Quest é uma das séries de RPG mais importantes da história dos
-          videogames, criada pela Square Enix. Conhecida por seu estilo
-          clássico, personagens icônicos e arte de
-          <strong>Akira Toriyama</strong> (criador de Dragon Ball), Dragon Quest
-          marcou gerações desde 1986.
+          Dragon Quest é uma das franquias mais importantes e influentes da
+          história dos RPGs japoneses. Criada por Yuji Horii e lançada pela
+          primeira vez em 1986, a série estabeleceu praticamente todas as bases
+          dos JRPGs clássicos: batalhas por turnos, progressão de níveis,
+          classes, mundos de fantasia vibrantes e jornadas heroicas que misturam
+          simplicidade, charme e profundidade narrativa.
+        </p>
+        <p>
+          Em parceria com dois gigantes — <strong>Akira Toriyama</strong> pelo
+          design dos personagens e monstros) e
+          <strong>Koichi Sugiyama</strong> (compositor das trilhas orquestradas
+          e marcantes da série) — Dragon Quest criou uma identidade visual e
+          sonora inconfundível, tornando-se um ícone cultural no Japão e
+          conquistando fãs ao redor do mundo.
+        </p>
+        <p>
+          Ao longo dos anos, a franquia explorou temas como amizade, coragem,
+          sacrifício e o eterno embate entre luz e escuridão. Cada jogo
+          apresenta um novo elenco, novos reinos e novos conflitos, mas preserva
+          a essência que tornou a série famosa: mundos acolhedores, histórias
+          emocionantes, personagens carismáticos e um estilo artístico cheio de
+          personalidade.
+        </p>
+        <p>
+          A série evoluiu graficamente — do 8-bits ao 3D moderno — mas sempre
+          manteve seu DNA: uma aventura grandiosa, acessível, divertida e com
+          alma.
+        </p>
+        <p>
+          Hoje, Dragon Quest é reconhecido como um dos pilares dos videogames
+          japoneses, influenciando gerações de títulos e jogadores. Seja
+          enfrentando slimes sorridentes, explorando castelos encantados ou
+          salvando o mundo de ameaças míticas, Dragon Quest continua sendo uma
+          jornada atemporal que celebra o espírito dos RPGs clássicos.
         </p>
       </section>
 
-      <section class="game-section">
-        <h2>Alguns jogos da série</h2>
+      <section class="game-section" id="game-section">
+        <h2>Principais Jogos da Série</h2>
         <ul class="game-list">
-          <li>
-            <h3>Dragon Quest XI S - Echoes of a Elusive Age</h3>
-            <img src="assets/dq11.png" alt="imagem do jogo dragon quest 11" />
-            <span>Lançamento: 2017</span>
-            <p>
-              Lançado inicialmente para o PlayStation 4 e posteriormente para
-              todas as plataformas, é considerado um dos melhores JRPGs
-              modernos, com belos gráficos e sistema clássico.
-            </p>
-            <button class="btn">mais detalhes</button>
-          </li>
-          <li>
-            <h3>Dragon Quest VIII - The Journey of the Cursed King</h3>
-            <img src="assets/dq8.jpg" alt="imagem do jogo dragon quest 8" />
-            <span>Lançamento: 2004</span>
-            <p>
-              Lançado para o PlayStation 2, é um dos títulos mais amados, com
-              mundo aberto vibrante, personagens marcantes e uma trilha sonora
-              sensacional.
-            </p>
-            <button class="btn">mais detalhes</button>
-          </li>
-          <li>
-            <h3>Dragon Quest V: Hand of the Heavenly Bride</h3>
-            <img src="assets/dq5.png" alt="imagem do jogo dragon quest 5" />
-            <span>Lançamento: 1992</span>
-            <p>
-              Um clássico do Super Nintendo, um dos jogos mais emocionantes da
-              franquia, famoso pela história em que acompanha uma geração de
-              heróis.
-            </p>
-            <button class="btn">mais detalhes</button>
-          </li>
+          
         </ul>
+        <div class="spin-off">
+          <h2>Alguns Spin-Offs</h2>
+          <ul class="game-list"></ul>
+        </div>
       </section>
     </main>
     <footer>
-      © 2025 Fan Site Dragon Quest – feito por
+      <img src="assets/slime.png" alt="icone de um slime" />
+      © 2025 Fan Site – feito por
       <a href="http://instagram.com/ks.rogue" target="_blank">David William</a>
+      <img src="assets/slime.png" alt="icone de um slime" />
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <script src="gameList.js"></script>
   </body>
 </html>

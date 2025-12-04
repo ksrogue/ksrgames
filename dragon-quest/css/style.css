@@ -30,8 +30,10 @@ main {
   align-items: center;
   gap: 16px;
   width: 90%;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-color);
   & p {
-    width: 90%;
+    width: 75%;
   }
   & img {
     max-width: 350px;
@@ -53,29 +55,32 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     border: 1px solid var(--border-color);
     width: 32%;
+    padding: 3px;
     gap: 8px;
     background-color: var(--surface-color);
   }
   & h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
   }
   & span {
     border-bottom: 1px solid var(--border-color);
     color: var(--accent);
+    font-size: .9em;
   }
   & p {
     margin-bottom: 8px;
   }
+  & button {
+   margin-left: auto;
+   margin-top: auto;
+   margin-right: 5px;
+   margin-bottom: 5px;
+   padding: 5px;
 }
-
-button {
-    margin-left: auto;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
 }
 
 .hidden {
@@ -83,12 +88,15 @@ button {
 }
 
 @media screen and (max-width: 600px) {
+  .about-section p {
+    width: 90%;
+  }
   .game-list {
     flex-direction: column;
     align-items: center;
     gap: 32px;
     & li {
-      width: 80%;
+      width: 90%;
     }
   }
 }

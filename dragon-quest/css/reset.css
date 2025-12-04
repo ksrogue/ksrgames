@@ -38,7 +38,7 @@
   text-decoration: none;
 
   color: var(--text-color);
-  transition: all 0.3s ease-in;
+  transition: background 0.3s ease-in;
 }
 
 body {
@@ -69,8 +69,7 @@ button {
 button:hover {
   background-color: var(--secondary);
   color: var(--primary);
-  transform: scale(1.03) translateY(-3px);
-  box-shadow: 3px 3px 5px var(--highlight);
+  transform: scale(1.03) translateY(-2px);
 }
 
 header {
@@ -90,6 +89,7 @@ header {
   }
 }
 .nav-bar {
+  overflow: hidden;
   display: flex;
   gap: 16px;
   z-index: 99;
@@ -129,23 +129,48 @@ header {
 footer {
   width: 100%;
   padding: 8px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  margin-top: 6px;
   text-align: center;
   background-color: var(--surface-color);
   border-top: 1px solid var(--border-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 footer a:hover {
   color: var(--accent);
 }
+footer img {
+  width: 26px;
+}
+@keyframes slimeJump {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-3px);
+  }
+}
+footer img:hover {
+  animation-name: slimeJump;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
 
 @media screen and (max-width: 600px) {
+  @keyframes navMenu {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
 
- 
   .nav-bar {
     display: none;
-    overflow: hidden;
   }
   .menu-icon {
     display: block;
@@ -163,5 +188,8 @@ footer a:hover {
     position: absolute;
     top: 50px;
     right: 10px;
+
+    animation-name: navMenu;
+    animation-duration: 0.7s;
   }
 }
