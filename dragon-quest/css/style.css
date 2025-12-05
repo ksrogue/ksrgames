@@ -61,10 +61,12 @@ main {
     padding: 3px;
     gap: 8px;
     background-color: var(--surface-color);
+    box-shadow: 3px 3px 5px var(--shadow-color)
   }
   & h3 {
     font-size: 1.1rem;
     text-align: center;
+    height: 50px;
   }
   & span {
     border-bottom: 1px solid var(--border-color);
