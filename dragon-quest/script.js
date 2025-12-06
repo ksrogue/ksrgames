@@ -4,7 +4,6 @@ const menuIcon = document.querySelector(".menu-icon");
 const themeButton = document.querySelector(".theme-button");
 const navButton = document.querySelector(".nav-button");
 
-
 /* Menu Hamburger */
 menuIcon.addEventListener("click", function openMenu() {
   navBar.classList.toggle("open-menu");
@@ -20,15 +19,7 @@ menuIcon.addEventListener("click", function openMenu() {
 /* Switch Theme */
 navButton.addEventListener("click", function switchTheme() {
   body.classList.toggle("dark-theme");
-  // if (body.classList.contains("dark-theme")) {
-  //   themeButton.classList.remove("bi-moon-fill");
-  //   themeButton.classList.add("bi-brightness-high-fill");
-  //   localStorage.setItem("theme", "dark");
-  // } else {
-  //   themeButton.classList.remove("bi-brightness-high-fill");
-  //   themeButton.classList.add("bi-moon-fill");
-  //   localStorage.setItem("theme", "light");
-  // }
+
   const isDark = body.classList.contains("dark-theme");
 
   themeButton.classList.toggle("bi-moon-fill", !isDark);
@@ -37,6 +28,8 @@ navButton.addEventListener("click", function switchTheme() {
   localStorage.setItem("theme", isDark ? "dark" : "light");
 });
 
+
+/* Save Theme State*/
 window.addEventListener("load", () => {
   const savedTheme = localStorage.getItem("theme");
   console.log(savedTheme);
