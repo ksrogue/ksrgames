@@ -17,9 +17,9 @@
         <img src="assets/logo.webp" alt="logo do jogo dragon quest" />
       </div>
       <ul class="nav-bar">
-        <li class="nav-item"><a href="#">Home</a></li>
-        <li class="nav-item"><a href="#">Sobre</a></li>
-        <li class="nav-item"><a href="#">Jogos</a></li>
+        <li class="nav-item" ><a href="#">Home</a></li>
+        <li class="nav-item"  onclick="scrollDown(`about`)"><a href="#">Sobre</a></li>
+        <li class="nav-item" onclick="scrollDown(`games`)"><a href="#">Jogos</a></li>
         <li class="nav-item"><a href="#">Contato</a></li>
         <li class="nav-item nav-button">
           <i class="bi bi-moon-fill theme-button"></i>
@@ -33,11 +33,11 @@
         <img src="assets/dq.png" alt="protagonistas do dragon quest" />
       </section>
 
-      <section class="about-section">
+      <section class="about-section" id="about">
         <h2>O que é Dragon Quest?</h2>
         <p>
           Dragon Quest é uma das franquias mais importantes e influentes da
-          história dos RPGs japoneses. Criada por Yuji Horii e lançada pela
+          história dos RPGs japoneses. Criada por <strong>Yuji Horii</strong> e lançada pela
           primeira vez em 1986, a série estabeleceu praticamente todas as bases
           dos JRPGs clássicos: batalhas por turnos, progressão de níveis,
           classes, mundos de fantasia vibrantes e jornadas heroicas que misturam
@@ -73,8 +73,10 @@
         </p>
       </section>
 
-      <section class="game-section" id="game-section">
-        <h2>Principais Jogos da Série</h2>
+      <section class="game-section" id="games">
+        <div class="style">
+          <h2>Principais Jogos da Série</h2>
+        </div>
         <ul class="game-list">
           
         </ul>
@@ -82,6 +84,10 @@
           <h2>Alguns Spin-Offs</h2>
           <ul class="game-list"></ul>
         </div>
+      </section>
+
+      <section class="slime">
+        <img src="assets/slime.png" alt="slime">
       </section>
     </main>
     <footer>

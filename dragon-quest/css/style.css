@@ -30,7 +30,7 @@ main {
   align-items: center;
   gap: 16px;
   width: 90%;
-  padding-bottom: 6px;
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--border-color);
   & p {
     width: 75%;
@@ -47,6 +47,7 @@ main {
 .game-list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
   margin-bottom: 50px;
   gap: 16px;
@@ -57,11 +58,12 @@ main {
     align-items: center;
     justify-content: space-evenly;
     border: 1px solid var(--border-color);
-    width: 32%;
+    width: 30%;
     padding: 3px;
     gap: 8px;
     background-color: var(--surface-color);
-    box-shadow: 3px 3px 5px var(--shadow-color)
+    box-shadow: 3px 3px 5px var(--shadow-color);
+    transition: all .3s ease-in-out;
   }
   & h3 {
     font-size: 1.1rem;
@@ -84,9 +86,27 @@ main {
    padding: 5px;
 }
 }
+li:hover {
+      transform: scale(1.03) translateY(-3px);
+      border-color: var(--secondary);
+    }
 
 .hidden {
   display: none;
+}
+
+.slime {
+  width: 256px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.slime img {
+  width: 100%;
+}
+.slime-animation {
+  animation-name: slimeJump;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
 }
 
 @media screen and (max-width: 600px) {

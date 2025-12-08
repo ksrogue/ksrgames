@@ -28,7 +28,6 @@ navButton.addEventListener("click", function switchTheme() {
   localStorage.setItem("theme", isDark ? "dark" : "light");
 });
 
-
 /* Save Theme State*/
 window.addEventListener("load", () => {
   const savedTheme = localStorage.getItem("theme");
@@ -40,3 +39,11 @@ window.addEventListener("load", () => {
     console.log("ta escuro");
   }
 });
+
+document.querySelector(".slime").addEventListener("click", () => {
+  document.querySelector(".slime").classList.toggle("slime-animation");
+});
+
+function scrollDown(target) {
+  document.getElementById(target).scrollIntoView({ behavior: "smooth" });
+}

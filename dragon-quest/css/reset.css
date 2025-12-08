@@ -20,8 +20,8 @@
   --surface-color: #141827;
   --text-color: #e7ecff;
 
-  --primary: #4dabf7;
-  --secondary: #ffd43b;
+  --primary: #194d77;
+  --secondary: #a89652;
   --accent: #ff6b6b;
 
   --border-color: #1f2a40;
@@ -150,7 +150,7 @@ footer img {
     transform: translateY(0);
   }
   to {
-    transform: translateY(-3px);
+    transform: translateY(-5%) scale(1.1);
   }
 }
 footer img:hover {

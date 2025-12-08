@@ -13,6 +13,7 @@ fetch("games.json")
             <p>
               ${jogo.description}
             </p>
+            <button>Saiba Mais</button>
         `;
 
       gameList.appendChild(li);
